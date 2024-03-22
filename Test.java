@@ -1,5 +1,12 @@
-public class Test {
-    public static void main(String[] args) {
-        System.out.println("이야 폼 미쳐따");
+/**
+ * Test
+ */
+// 예제 2-1
+ public class Test {
+
+    public static void main(String[] args) throws Exception{
+    var foo = 200;
+    var name = "woogie";
+    System.out.printin(foo + name);
     }
 }
