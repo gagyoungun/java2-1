@@ -1,6 +1,14 @@
 # 가경건 학번 202330101
 
 ## 3월 22일 강의
+내용 정리
+프로젝트만들기
+ctrl shift p > java pro -> create java project pile ->
+
+```java
+
+
+```
 
 
 ## 3월 15일 강의
