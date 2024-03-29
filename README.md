@@ -15,7 +15,7 @@
     if(score >= 80 && score <= 89 )
         System.out.println("학점은 B 입니다.");
 ```
-    If else 문
+▶ If else 문
 ```java
     if(score >= 90 ) {
         System.out.println("합격입니다.");
