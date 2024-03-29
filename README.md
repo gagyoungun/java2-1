@@ -3,8 +3,49 @@
 ## 3월 29일 강의
 내용정리
 
+▶ 증감연산자 a++,a-- = a에 1를 적용하기 전에 값을 반환
+            ++a,--a = a에 1를 적용하고 값을 반환
 
+▶ 조건문 : 단순 If 문
+```java
+    if(n%2 ==0) {
+        System.out.print(n);
+        System.out.println("짝수입니다.");
+    }
+    if(score >= 80 && score <= 89 )
+        System.out.println("학점은 B 입니다.");
+```
+    If else 문
+```java
+    if(score >= 90 ) {
+        System.out.println("합격입니다.");
+    }
+    else
+        System.out.println("괜찮아요! 할 수 있어요");
+```
+▶ switch문
+```java
+    switch(grade) {
+    case 'A' :
+        System.out.println("합격입니다.");
+    case 'B' :
+        System.out.println("좋아여");
+    case 'C' :
+        System.out.println("괜찮아요! 할 수 있어요");
+    }
+```
+▶ 반복문
+    1. for 문
+    2. while 문
+    3. do-while 문
 
+    + continue: 다음 반복문으로 가고자 할때 , break:현재 반복문을 벗어나는 것
+
+▶ 배열
+```java
+    int i[] = new int [10]
+```
+배열로 구성하면 데이터가 순차적으로 저장됨
 ## 3월 22일 강의
 내용 정리
 
