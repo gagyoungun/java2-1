@@ -7,6 +7,6 @@
     public static void main(String[] args) throws Exception{
     var foo = 200;
     var name = "woogie";
-    System.out.printin(foo + name);
+    System.out.println(foo + name);
     }
 }
