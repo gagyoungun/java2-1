@@ -19,11 +19,26 @@ package 키워드를 이용하여 클래스가 소속될 패키지 명을 선언
 
 ▶ 모듈
 패키지들을 담는 컨테이너로 부분 부분 담겨있는 것
-하드웨어가 열악한 소형IoT장치 
+목적 : 하드웨어가 열악한 소형IoT장치 
 
 ▶ 자바JDK에서 제공하는 패키지
+.lang .util .io .awt .swing
 
+▶ Object 클래스의 특징
+아무 클래스도 상속 받지 않는 최상위 클래스이다. 
 
+▶ Wrapper 클래스 개념
+static 타입 8개의 타입들을 wrapper 클래스라 말한다.
+Byte, Short, Integer, Long, Character, Float, Double, Boolean 
+
+▶ 박싱과 언박싱
+ ```java
+    Integer ten = Integer.valueOf(10); //박싱
+    int n = ten.intValue(); //언박싱
+ ```
+▶ Math 클래스
+기본적인 산술 연앗을 수행하는 메소드 제공하는 클래스로서, static타입
+ 
 
 ## 4월 12일 강의
 내용정리
