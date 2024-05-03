@@ -27,6 +27,30 @@ AWT 거의 사용하지 않음
 Swing 패키지 AWT 기반의 고급 컨포턴트 모두 스웅으로 재작성 순수 java언어로 구현
 운영체제의 부담없음. 현재 자바의 GUI
 
+▶ 컨테이너
+컴포턴트를 포함할 수 있는 특별한 GUI 컴포넌트다. 
+
+▶ 컨포넌트
+GUI 객체이다.  컨테이너 위에 컨포넌트가 쌓는 느낌
+
+▶ 스윙 프레임
+```
+import javax.swing.*;
+
+public class Ex8_1 extends JFrame {
+    public Ex8_1() {
+        setTitle("getTitle()");
+        setSize(300,300);
+        setVisible(true);
+
+    }
+    public static void main(String[] args)
+ {
+    Ex8_1 frame = new Ex8_1();
+ }    
+}
+
+```
 
 
 ## 4월 19일 강의
