@@ -35,6 +35,17 @@ GridLayout
 2차원 그리드로 나누고 컴포넌트가 들어오는 순서대로 좌우 위아래 순서로 배치
 
 ```java
+contentPane.setLayout(new GridLayout(4,3, 10, 10));
+
+for(int i=9; i>=0; i--){
+    String text = Integer.toString(i);
+    contentPane.add(new JButton(text));
+    }
+```
+
+CardLayout
+포개에 배치한다 카드를 겹치듯이
+```java
 contentPane.setLayout(null);
 
         JLabel la = new JLabel("hello");
@@ -42,11 +53,6 @@ contentPane.setLayout(null);
         la.setSize(200,20);
         contentPane.add(la);
 ```
-
-CardLayout
-포개에 배치한다 카드를 겹치듯이
-
-▶ 배치관리자가 없느 컨테이너
 
 
 AWT와 스윙컨테이너 | 디폴트 배치관리자 
