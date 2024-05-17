@@ -1,4 +1,4 @@
-package Ex7;
+package Ex08;
 import javax.swing.*;
 
 public class Ex8_1 extends JFrame {

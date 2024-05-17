@@ -1,4 +1,4 @@
-package Ex7;
+package Ex08;
 import javax.swing.*;
 import java.awt.*;
 
