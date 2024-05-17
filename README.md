@@ -9,26 +9,26 @@ FlowLayout
 컨테이너에 삽입되는 순서대로 왼쪽부터 오른쪽으로 배치한다. 옆에 배치
 
 ```java
-    contentPane.setLayout((new FlowLayout(FlowLayout.LEFT,  30    ,   40   )));
-                                         (왼쪽정렬        ,수평간격, 수직간격)
-        contentPane.add(new JButton("add"));
-        contentPane.add(new JButton("sub"));
-        contentPane.add(new JButton("mul"));
-        contentPane.add(new JButton("diw"));
-        contentPane.add(new JButton("Calculate"));
+contentPane.setLayout((new FlowLayout(FlowLayout.LEFT,  30    ,   40   )));
+                                     (왼쪽정렬        ,수평간격, 수직간격)
+    contentPane.add(new JButton("add"));
+    contentPane.add(new JButton("sub"));
+    contentPane.add(new JButton("mul"));
+    contentPane.add(new JButton("diw"));
+    contentPane.add(new JButton("Calculate"));
 ```
 
 BorderLayout
 동,서,남,북,중앙에 따라 5개의 영역으로 나누고 지정된 장소에 배치하는 것
 
 ```java
-    contentPane.setLayout(new BorderLayout(   30  ,  20    ));
-                                          (수평간격, 수직간격)
-        contentPane.add(new JButton("Calculate"), BorderLayout.CENTER);
-        contentPane.add(new JButton("add"), BorderLayout.NORTH);
-        contentPane.add(new JButton("sub"), BorderLayout.SOUTH);
-        contentPane.add(new JButton("mul"), BorderLayout.EAST);
-        contentPane.add(new JButton("div"), BorderLayout.WEST);
+contentPane.setLayout(new BorderLayout(   30  ,  20    ));
+                                      (수평간격, 수직간격)
+    contentPane.add(new JButton("Calculate"), BorderLayout.CENTER);
+    contentPane.add(new JButton("add"), BorderLayout.NORTH);
+    contentPane.add(new JButton("sub"), BorderLayout.SOUTH);
+    contentPane.add(new JButton("mul"), BorderLayout.EAST);
+    contentPane.add(new JButton("div"), BorderLayout.WEST);
 ```
 
 GridLayout
@@ -36,6 +36,9 @@ GridLayout
 
 CardLayout
 포개에 배치한다 카드를 겹치듯이
+
+▶ 배치관리자가 없느 컨테이너
+
 
 AWT와 스윙컨테이너 | 디폴트 배치관리자 
 ---------|----------
