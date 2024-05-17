@@ -2,10 +2,11 @@
 
 ## 5월 17일
 내용정리
+
 ▶ 컨테이너와 배치
     FlowLayout 
     컨테이너에 삽입되는 순서대로 왼쪽부터 오른쪽으로 배치한다. 옆에 배치
-    
+
     ```java
     contentPane.setLayout((new FlowLayout(FlowLayout.LEFT,  30    ,   40   )));
                                          (왼쪽정렬        ,수평간격, 수직간격)
