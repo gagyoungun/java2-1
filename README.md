@@ -4,8 +4,9 @@
 내용정리
 
 ▶ 컨테이너와 배치
-    FlowLayout 
-    컨테이너에 삽입되는 순서대로 왼쪽부터 오른쪽으로 배치한다. 옆에 배치
+
+FlowLayout 
+컨테이너에 삽입되는 순서대로 왼쪽부터 오른쪽으로 배치한다. 옆에 배치
 
     ```java
     contentPane.setLayout((new FlowLayout(FlowLayout.LEFT,  30    ,   40   )));
@@ -17,8 +18,8 @@
         contentPane.add(new JButton("Calculate"));
     ```
 
-    BorderLayout
-    동,서,남,북,중앙에 따라 5개의 영역으로 나누고 지정된 장소에 배치하는 것
+BorderLayout
+동,서,남,북,중앙에 따라 5개의 영역으로 나누고 지정된 장소에 배치하는 것
 
     ```java
     contentPane.setLayout(new BorderLayout(   30  ,  20    ));
@@ -30,11 +31,11 @@
         contentPane.add(new JButton("div"), BorderLayout.WEST);
     ```
 
-    GridLayout
-    2차원 그리드로 나누고 컴포넌트가 들어오는 순서대로 좌우 위아래 순서로 배치
+GridLayout
+2차원 그리드로 나누고 컴포넌트가 들어오는 순서대로 좌우 위아래 순서로 배치
 
-    CardLayout
-    포개에 배치한다 카드를 겹치듯이
+CardLayout
+포개에 배치한다 카드를 겹치듯이
 
 AWT와 스윙컨테이너 | 디폴트 배치관리자 
 ---------|----------
