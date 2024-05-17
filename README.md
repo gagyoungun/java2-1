@@ -34,6 +34,15 @@ contentPane.setLayout(new BorderLayout(   30  ,  20    ));
 GridLayout
 2차원 그리드로 나누고 컴포넌트가 들어오는 순서대로 좌우 위아래 순서로 배치
 
+```java
+contentPane.setLayout(null);
+
+        JLabel la = new JLabel("hello");
+        la.setLocation(130,50);
+        la.setSize(200,20);
+        contentPane.add(la);
+```
+
 CardLayout
 포개에 배치한다 카드를 겹치듯이
 
