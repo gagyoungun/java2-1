@@ -1,5 +1,48 @@
 # 가경건 학번 202330101
 
+## 5월 24일
+내용정리
+
+▶ 이벤트 기반 프로그래밍
+
+어떤 일이 발생하면 프로그램이 자동으로 대응하도록 하는 방식
+
+이벤트 기반 GUI 프로그래밍은 사용자의 입력이나 시스템의 변화에 따라 프로그램이 동작하는 방식입니다. 즉, 프로그램은 미리 정의된 이벤트를 처리하고, 이벤트가 발생하면 이에 맞는 코드를 실행하여 사용자와의 상호 작용을 구현합니다.
+            이벤트 소스 -> 이벤트 객체 -> 이벤트 리스너 -> 이벤트 분배 스레드
+
+▶ 이벤트 객체
+이벤트 객체가 포함하는 정보
+○ 이벤트 종류와 이벤트 소스
+ 이벤트가 발생한 화면과 
+
+
+▶ 이벤트 리스너
+```java
+interface MouseListener {
+    public void mousePressed(MouseEvent e);     //마우스가 눌러지는 순간
+    public void mouseReleased(MouseEvent e);    //눌러진 마우스 버튼이 떼어지는 순간
+    public void mouseClicked(MouseEvent e);     //마우스가 클릭되는 순간
+    public void mouseEntered(MouseEvent e);     //마우스가 컴포넌트 위에 올라가는 순간
+    public void mouseExited(MouseEvent e);      //마우스가 컴포턴트 위에 내려오는 순간
+}
+```
+익명클래스(anonymous class), 어댑터 클래스
+
+▶ Key 이벤트와 KeyListener
+
+Key 이벤트는 사용자가 키보드를 누르거나 눌렀을 때 발생하는 이벤트입니다. 키를 누르면 키 누름 이벤트가 발생하고, 키를 놓으면 키 놓음 이벤트가 발생합니다. 또한, 특정 키를 누르고 있을 때 지속적으로 발생하는 키 누르기 이벤트도 있습니다.
+
+KeyListener는 키 이벤트를 처리하는 데 사용되는 Java 인터페이스입니다. KeyListener를 구현하는 클래스는 keyPressed(), keyReleased(), keyTyped() 메서드를 오버라이딩해야 합니다. 각 메서드는 각각 키 누름, 키 놓음, 키 입력 이벤트가 발생했을 때 호출됩니다.
+
+▶ Mouse 이벤트와 MouseListener, MouseMotionListener
+
+Mouse 이벤트는 사용자가 마우스를 클릭하거나 움직일 때 발생하는 이벤트입니다. 마우스를 클릭하면 마우스 클릭 이벤트가 발생하고, 마우스를 움직이면 마우스 움직임 이벤트가 발생합니다. 또한, 마우스 버튼을 누르고 있으면 지속적으로 발생하는 마우스 드래그 이벤트도 있습니다.
+
+MouseListener는 마우스 이벤트를 처리하는 데 사용되는 Java 인터페이스입니다. MouseListener를 구현하는 클래스는 mousePressed(), mouseReleased(), mouseClicked(), mouseEntered(), mouseExited() 메서드를 오버라이딩해야 합니다. 각 메서드는 각각 마우스 버튼 누름, 마우스 버튼 놓음, 마우스 클릭, 마우스 포인터가 컴포넌트 영역에 들어옴, 마우스 포인터가 컴포넌트 영역을 벗어남 이벤트가 발생했을 때 호출됩니다.
+
+MouseMotionListener는 마우스 움직임 이벤트를 처리하는 데 사용되는 Java 인터페이스입니다. MouseMotionListener를 구현하는 클래스는 mouseMoved() 및 mouseDragged() 메서드를 오버라이딩해야 합니다. 각 메서드는 각각 마우스 포인터가 움직였을 때, 마우스 버튼을 누른 채로 움직였을 때 호출됩니다.
+
+
 ## 5월 17일
 내용정리
 
@@ -59,11 +102,6 @@ AWT와 스윙컨테이너 | 디폴트 배치관리자
 ---------|----------
  window,JWindow Frame, JFrame, Dialog, JDialog | BorderLayout
  Panel, JPanel, Applet, JApplet | FlowLayout
-
-
-
-
-
 
 
 ## 5월 3일
