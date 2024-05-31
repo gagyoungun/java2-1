@@ -63,8 +63,73 @@ JButton(String text, Icon image)//문자열과 이미지 모두 가진 버튼
 마우스 버튼이 눌러져 있는 동안 출력되는 이미지, setPressedIcon(Icon image)를 호출하여 설정
 
 
+▶ JCheckBox 체크박스 만들기
+```java
+JCheckBox() //빈 체크박스
+JCheckBox(Icon image) //이미지 체크박스
+JCheckBox(Icon image, boolean selected) //이미지 체크박스
+JCheckBox(String text, Icon image) //문자열과 이미지를 가진 체크박스
+JCheckBox(String text, Icon image, boolean selected) //문자열과 이미지 체크박스
+-selected: true이면 선택 상태로 초기화
+```
 
+▶ JTextField
+한 줄의 문자열을 입력받는 창(텍스트필드)을 만들 수 있다.
+```java
+JTextField() //빈 텍스트필드
+JTextField(int cols)  //입력 창의 열의 개수가 cols개인 택스트필드
+JTextField(String text) //text 문자열로 초기화된 택스트필드
+JTextField(String text, int cols) //입력 창의 열의 개수는 cols개이고 text문자열로 초기화된 택스트필드
+```
 
+▶ JTextArea
+여러 줄의 문자열을 입력받는 창(텍스트영역)을 만들 수 있다.
+```java
+JTextArea() //빈 텍스트영역
+JTextArea(int rows, int cols)  //입력 창의 rows x cols개의 문자 크기인 택스트영역
+JTextArea(String text) //text 문자열로 초기화된 택스트영역
+JTextArea(String text, int rows, int cols) //입력 창의 열의 개수는  rows x cols개의 문자크기이며 text 문자열로 초기화된 택스트영역
+```
+
+▶ JList<E>
+데이터를 표시하고 선택할 수 있는 목록
+```java
+JList<E>() //빈 리스트
+JList<E>(Vector listData) //벡터로부터 아이템을 공급받는 리스트
+JList<E>(object [] ListData) //배열로 부터 아이탬을 공급받는 리스트
+```
+
+▶ JComboBox<E>
+텍스트필드, 버튼, 드롭다운 리스트가 있는 박스여.
+```java
+JComboBox<E>() //빈 콤보박스
+JComboBox<E>(Vector items) //벡터로부터 아이템을 공급받는 콤보박스
+JComboBox<E>(object [] items) //배열로 부터 아이탬을 공급받는 콤보박스
+```
+
+▶ 메뉴 만들기
+메뉴(JMenu), 메뉴바(JMnuBar), 메뉴아이템(JMenuItem), 분리선 
+```java
+1. JMenuBar mb = new JMenubar(); //메뉴바 mb생성
+
+2. JMenu screenMenu = new JMenu("Screen") //Screen 메뉴 생성
+   mb.add(screenMenu); //screen메뉴삽입
+
+3. screenMenu.add(new JMenuItem("Load"));  
+   screenMenu.add(new JMenuItem("Hide"));
+   screenMenu.add(new JMenuItem("ReShow"));
+   screenMenu.addSeparator(); //분리선
+   screenMenu.add(new JMenuItem("Exit"));
+
+4.frame.setJMenuBar(mb); //프레임일 붙친다.
+```
+
+▶ 입력 다이얼로그
+```java
+String name = JOptionPane.showInpuDialog("이름을 입력하세요");
+//name에 ~~ 확인하면
+//취소 버튼이나 , 입력없이 다이얼로그가 닫히면 null 리턴
+```
 
 
 ## 5월 24일
