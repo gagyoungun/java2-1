@@ -1,5 +1,72 @@
 # 가경건 학번 202330101
 
+## 5월 31일
+내용정리
+
+▶ 스윙 컴포넌트 소개
+
+스윙(Swing) 컴포넌트는 자바 프로그래밍에서 그래픽 사용자 인터페이스(GUI)를 구축하는 데 사용되는 라이브러리
+    JFrame, JPanel, JButton, JTextField, JLabel, JComboBox, JCheckBox이 있다.
+
+○ 컴포넌트 모양과 관련된
+```java
+void setForeground(Color) //전경색 설정
+void setBackgroung(Color) //배경색 설정
+void setOpaque(Color) //불투명성 설정
+void setFont(font) //폰트 설정
+Font getRont()//폰트 리턴
+```
+
+○ 컴포넌트 상태와 관련된 메소드
+```java
+void setEnabled(boolean)  //컴포넌트 활성화/비활성화
+void setVisible(boolean) //컴포넌트 보이기/숨기기
+boolean isVisible() //컴포턴트의 보이는 상태 리턴
+```
+
+○ 컴포넌트 위치와 크기에 관련된 메소드
+```java
+int getWidth() //폭 리턴
+int getHeight() //높이 리턴
+int getX() //x 좌표 리턴
+int getY() //y 좌표 리턴 
+Point getLocationOnScreen() //스크린 좌표상에서의 컴포넌트 좌표
+void setLocation(int, int) //위치지정
+void setSize(int, int) //크기저장
+```
+○ 컨테이너를 위한 메소드
+```java
+Component add(Component)  //자식 컴포넌트 추가
+void remove(Component) //자식컴포넌트 제거
+void removeALL()   //모든 자식 컴포넌트 제거
+Component[] getComponents() //자식컴포넌트 배열 리턴
+Container getParent()  //부모 컨테이너 리턴
+Container getTopLevelAncestor() //최상위 부모 컨테이너 리턴
+```
+
+
+▶ JButton으로 버튼 만들기
+```java
+JButton()  //빈 버튼
+JButton(Icon image) //이미지 버튼
+JButton(String text)//문자열 버튼
+JButton(String text, Icon image)//문자열과 이미지 모두 가진 버튼
+```
+
+-normalIcon
+버튼이 보통 상태로 있을 때 출력되는 디폴트 이미지, setIcon(Icon image)를 통해 설정
+
+-rolloverIcon
+버튼에 마우스가 올라가면 출력되는 이미지, setRolloverIcon(Icon image)를 통해 호출
+
+-pressedIcon
+마우스 버튼이 눌러져 있는 동안 출력되는 이미지, setPressedIcon(Icon image)를 호출하여 설정
+
+
+
+
+
+
 ## 5월 24일
 내용정리
 
