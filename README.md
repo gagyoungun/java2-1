@@ -1,5 +1,58 @@
 # 가경건 학번 202330101
 
+## 6월 07일
+내용정리
+
+▶ 스윙 컴포넌트 그리기
+GUI플랫폼에서 컴포넌트는 스스로 자신의 모양을 그린다.
+paintComponent()의 오버라이딩 하면 원하는 모양을 그릴 수 있다.
+
+▶ Graphics
+의 기능  색상, 문자열, 도형그리기, 도형 칠하기 ,이미지, 클리핑
+
+```java
+void drawString(String str, int x, int y) 
+// x, y 좌표에 문자열을 출력해!
+```
+
+색을 표현하는 클래스 rgb로 구성됨
+```java
+Color (int r, int g, int b) 
+Color(int rgb)
+```
+
+▶ 도형그리기와 칠하기
+```java
+void drawLine(int x1, int y1, int x2, int y2)
+//x1, y1 -> x2, y2까지의 선을 그린다.
+void drawOval(int x, int y, int w, int h)
+//(x, y)에서 w x h크기의 사각형에 내접하는 타원을 그린다.
+void drawRect(int x, int y, int w, int h)
+//(x, y)에서 w x h 크기의 사각형을 그린다.
+void drawRoundRect(int x, int y, int w, int h, int arcWidth, int arcHeight)
+//(x, y)에서 w x h 크기의 사각형을 그리되, 4모서리는 arcWidth,arcHeight를 이용해 원호를 그린다.
+```
+
+▶ 스레드와 운영체제
+스레드란 운영체제에 의해 관리 되는 하나의 작업 혹은 데스크를 말하며,
+스레드=프로세스와 같은 개념.
+
+▶ 멀티스레딩(multi-threading):
+
+멀티스레딩은 하나의 애플리케이션이 여러 작업을 동시에 수행할 수 있도록 여러 쓰레드를 사용하는 기법
+예를 들어, 웹 브라우저는 하나의 쓰레드를 사용하여 사용자 입력을 처리하고, 다른 쓰레드를 사용하여 페이지를 로드하며, 또 다른 쓰레드를 사용하여 비디오를 재생할 수 있습니다.
+
+하나의 프로그램이 돌 때 여러 개의 스레드를 동시에 하는 것
+
+스레드 객체 생성 
+```java
+Thread th = new Thread(new TimerRunnable());
+
+th. start();
+//쓰레드 시작
+```
+
+
 ## 5월 31일
 내용정리
 
