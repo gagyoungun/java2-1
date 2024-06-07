@@ -44,7 +44,7 @@ void drawRoundRect(int x, int y, int w, int h, int arcWidth, int arcHeight)
 
 하나의 프로그램이 돌 때 여러 개의 스레드를 동시에 하는 것
 
-스레드 객체 생성 
+▶ 스레드 객체 생성 
 ```java
 Thread th = new Thread(new TimerRunnable());
 
@@ -52,6 +52,29 @@ th. start();
 //쓰레드 시작
 ```
 
+▶ 멀티스레드 프로그램 작성 시 주의점
+다수의 스레드가 공유 데이터에 동시에 접근하는 경우
+
+▶ 스레드 동기화(Thread Synchronization)
+스레드 동기화는 여러 스레드가 공유 자원에 접근할 때 그 접근을 제어하는 메커니즘입니다. 동기화 기법을 사용하면 경합 조건을 방지하고,
+자원의 일관성을 유지할 수 있습니다.
+
+▶ synchronized 블록
+사용하면 특정 코드 블록을 하나의 스레드만 실행할 수 있게 하여 경합 조건을 방지하고, 데이터 일관성을 유지할 수 있습니다.
+```java
+synchronized (lockObject) {
+    // 동기화가 필요한 코드
+}
+```
+
+▶ wait()-notify()를 이용한 스레드 동기화
+
+wait() 메서드
+기능: wait() 메서드는 스레드가 해당 객체의 모니터 락(Monitor Lock)을 해제하고 대기 상태로 들어가도록 만듭니다. 스레드는 다른 스레드가 notify() 또는 notifyAll() 메서드를 호출하여 대기 중인 스레드를 깨울 때까지 기다립니다.
+
+notify() 메서드
+기능: notify() 메서드는 해당 객체의 모니터 락을 소유하고 있는 스레드 중 하나를 깨웁니다. 깨어난 스레드는 대기 상태에서 실행 가능한 상태로 전환됩니다.
+사용법: notify() 메서드도 반드시 synchronized 블록 내에서 호출되어야 합니다.
 
 ## 5월 31일
 내용정리
