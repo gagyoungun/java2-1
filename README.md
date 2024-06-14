@@ -1,5 +1,71 @@
 # 가경건 학번 202330101
 
+## 6월 14일
+내용정리
+
+▶ 자바의 입출력 스트림
+    문자 스트림 : 텍스트 파일, 문자열 등 문자 인코딩 자동 처리
+    바이트 스트림:이미지, 오디오 인코딩 없이 순수 바이트 처리, 바이너리 데이터의 효율적인 처리
+
+▶ 파일 입출력과 예외처리
+```java
+try {
+    FileReader fin =new FileReader("c:\\test.txt");
+    ..
+    int c = fin.read();
+    ...
+    fin.close();
+} catch(FileNotRoundException e) {
+    System.out.println("파일을 열수 없음");    
+} catch(IOException e) {
+    System.out.println("입출력 오류");
+}
+```
+
+▶ 'java.io.File' 파일 클래스란? 
+일의 경로와 속성을 추상화하기 때문에 파일을 읽거나 쓰는 기능을 직접 제공X,
+ 파일을 읽고 쓰려면 FileInputStream, FileOutputStream, BufferedReader, BufferedWriter 등의 클래스를 사용
+
+▶ TCP/IP 프로토콜
+ 컴퓨터 네트워크에서 데이터 통신을 위한 핵심 프로토콜.
+  TCP/IP는 전 세계적으로 널리 사용되며, 인터넷을 비롯한 대부분의 네트워크에서 기본적으로 사용
+
+▶ 인터넷 프로토콜 주소 (IP, Internet Protocol): 
+255.255.255.255 4개의 숫자[IPv4]가 이어짐. -> 외우기 어렵기에 www.naver.com 같이 도메인 이름으로 사용함 -> DNS -> IP숫자
+IP는 데이터 패킷의 라우팅과 전달을 관리하며, 각각의 패킷에 IP 주소를 할당하여 네트워크 상에서의 목적지를 지정.
+IP는 데이터를 패킷으로 나누어 다른 네트워크로 전송하고, 수신 측에서 패킷을 재조립하여 완전한 데이터로 만듭니다.
+
+▶ TCP/IP 포트
+포트 23 (Telnet): 원격 로그인을 위한 프로토콜
+포트 80 (HTTP): 웹 브라우징을 위한 프로토콜
+포트 1883 (MQTT): IoT 디바이스와 서버 간의 통신을 위한 경량 메시징 프로토콜
+
+▶ 소켓 (socket)
+
+소켓 통신 방법
+클라이언트 소켓: 연결을 요청하고, 데이터를 보내고 받는 소켓입니다.
+서버 소켓: 연결을 수락하고, 클라이언트의 요청을 처리하는 소켓입니다.
+
+소켓 통신 순서:
+클라이언트는 서버에 연결 요청-> 서버는 연결 요청을 수락하고, 클라이언트와의 통신을 위한 새로운 소켓을 생성->
+데이터는 클라이언트와 서버 간에 이 새로운 소켓을 통해 전송, 데이터 송수신
+
+
+▶ 클라이언트 소켓 생성 및 서버 접속
+```java
+Socket clientSocket = new Socket("128.12.1.1",9999); //128.12.1.1서버에 접속
+```
+
+```java
+Socket clientSocket = new Socket();
+clientSocket.bind(new InetSocketAddress("192.168.1.21",1234));
+                    //소켓에 자신의 IP주소와 로컬 포트(1234)를 결합한다.
+clientSocket.connect(new InetSocketAddress("192.168.1.21",9999)); 
+                    //소켓에 자신의 IP주소와 9999인 서버 응용프로그램에 접속.                 
+```
+
+
+
 ## 6월 07일
 내용정리
 
