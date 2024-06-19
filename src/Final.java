@@ -1,11 +1,12 @@
+package src;
 /*
  * 이 프로그램은 swing을 이용하여 스크롤 윈도우 패널에 
  * 구구단을 출력하는 간단한 프로그램입니다.
  */
 
 // [문제1] swing 프로그램을 위해 필요한 컴포넌트 클래스 및 그래픽을 위한 클래스 import 해주세요.
-import ;
-import ;
+import javax.swing.*;
+import java.awt.*;
 
 public class Final extends JFrame {
     private JTextArea resultArea;
