@@ -61,7 +61,7 @@ Socket clientSocket = new Socket();
 clientSocket.bind(new InetSocketAddress("192.168.1.21",1234));
                     //소켓에 자신의 IP주소와 로컬 포트(1234)를 결합한다.
 clientSocket.connect(new InetSocketAddress("192.168.1.21",9999)); 
-                    //소켓에 자신의 IP주소와 9999인 서버 응용프로그램에 접속.                 
+                    //소켓에 자신의 IP주소와 9999인 서버 응용프로그램에 접속를 결합한다.                 
 ```
 
 
