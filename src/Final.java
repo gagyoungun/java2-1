@@ -13,9 +13,7 @@ public class Final extends JFrame {
 
     public Final() {
         setTitle("구구단 출력기"); // [문제2] 타이틀에 '구구단 출력기'라고 나오도록 작성해 주세요.
-        
         setSize(500,400); // [문제3] 윈도우의 크기를 정의 하세요. 크기는 500 x 400입니다.
-     
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // [문제4] 윈도우 우측 상당의 X아이콘을 클릭하면 프로그램이 종료되도록 합니다.
         setLocationRelativeTo(null);
 
